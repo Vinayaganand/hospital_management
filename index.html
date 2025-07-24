@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Management Scheduler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hospital Management Scheduler</h1>
+      <form id="patientForm">
+        <div class="form-group">
+          <label for="name">Patient Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter patient's name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" placeholder="Enter age" required />
+        </div>
+        <div class="form-group">
+          <label for="symptoms">Symptoms:</label>
+          <input
+            type="text"
+            id="symptoms"
+            placeholder="Describe symptoms"
+            required
+          />
+        </div>
+        <button type="submit">Add Patient</button>
+      </form>
+      <div class="lists">
+        <div class="list-container">
+          <h2>Patient Queue</h2>
+          <ul id="patientList"></ul>
+        </div>
+        <div class="list-container">
+          <button id="processButton">Process Patients</button>
+          <h2>Processing Results</h2>
+          <ul id="resultList"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
